@@ -1,0 +1,104 @@
+<html>
+<head>
+	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js?ver=2.1.4'></script>
+	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js?ver=1.11.4' async='async'></script>
+	<script type='text/javascript' src='https://lu2cspjiis-flywheel.netdna-ssl.com/wp-content/themes/moonshot/assets/js/min/bootstrap-min.js?ver=4.7.5' async='async'></script>
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+		td.active { border: 1px solid red; }
+		tr#results { font-weight: 700; }
+		span.subtext { font-size: 12px; color: #aaa; }
+	</style>
+</head>
+
+<body>
+	<table>
+		<tr class="email_marketing">
+			<td class="selectable" data-price="99" data-row="email_marketing" data-family="hatchbuck">Hatchbuck<br /><span class="subtext">Small Business Plan / Billed Annually</span></td>
+			<td class="selectable" data-price="199" data-row="email_marketing" data-family="infusionsoft">Infusionsoft<br /><span class="subtext">Plus $999 Kickstart Lite Fee / Essentials Package (3 Users) / Annual Contract Required</span></td>
+			<td class="selectable" data-price="20" data-row="email_marketing" data-hack="yep">Mailchimp<br /><span class="subtext">Growing Business Plan / Billed Monthly</span></td>
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td class="hubspot" data-price="850" data-row="email_marketing" data-family="hubspot">Hubspot<br /><span class="subtext">Billed Annually + $3000 Onboarding Fee</span></td>
+		</tr>
+
+		<tr class="crm">
+			<td class="selectable" data-price="0" data-row="crm" data-family="hatchbuck">Hatchbuck<br /><span class="subtext">included</span></td>
+			<td class="selectable" data-price="0" data-row="crm" data-family="infusionsoft">Infusionsoft<br /><span class="subtext">included</span></td>
+			<td class="selectable" data-price="40" data-row="crm" data-hack="yep">Zoho<br /><span class="subtext">Professional Plan / Billed Annually / $20 per user</span></td>
+			<td class="selectable" data-price="80" data-row="crm" data-hack="yep">SugarCRM<br /><span class="subtext">Sugar Professional / $40 per user, per month / Billed Annually</span></td>
+			<td class="selectable" data-price="150" data-row="crm" data-hack="yep">Salesforce IQ<br /><span class="subtext">Growth Plan / $75/user/month, Billed annually</span></td>
+			<td class="hubspot" data-price="0" data-row="crm" data-family="hubspot">Hubspot<br /><span class="subtext">included</span></td>
+		</tr>
+
+		<tr class="automation">
+			<td class="selectable" data-price="0" data-row="automation" data-family="hatchbuck">Hatchbuck<br /><span class="subtext">included</span></td>
+			<td class="selectable" data-price="100" data-row="automation" data-parent="infusionsoft">Infusionsoft<br /><span class="subtext">To upgrade to the Deluxe Package, Billed Annually</span></td>
+			<td class="selectable" data-price="2084" data-row="automation" data-hack="kinda">Marketo<br /><span class="subtext">Per month, Billed Annually / Our solutions start at $25,000 a year for a 10,000 contact database, which is a little over $2k per month</span></td>
+			<td class="selectable" data-price="1000" data-row="automation" data-hack="kinda">Pardot<br /><span class="subtext">Pardot Standard / Per Month, Billed Annually</span></td>
+			<td class="hack"></td>
+			<td class="hubspot" data-price="0" data-row="automation" data-family="hubspot">Hubspot<br /><span class="subtext">included</span></td>
+		</tr>
+
+		<tr class="social_media">
+			<td class="hack"></td>
+			<td class="selectable" data-price="99" data-row="social_media">Buffer<br /><span class="subtext">Small Package / Billed Monthly</span></td>
+			<td class="selectable" data-price="99" data-row="social_media">Hootsuite<br /><span class="subtext">Team Package / Billed Annually</span></td>
+			<td class="selectable" data-price="99" data-row="social_media">SproutSocial<br /><span class="subtext">Premium Plan / Billed Monthly</span></td>
+			<td class="selectable" data-price="79" data-row="social_media">DrumUp<br /><span class="subtext">Small Business Plan / Billed Monthly</span></td>
+			<td class="hubspot" data-price="0" data-row="social_media" data-family="hubspot">Hubspot<br /><span class="subtext">included</span></td>
+		</tr>
+
+		<tr class="landing_page">
+			<td class="hack"></td>
+			<td class="selectable" data-price="55" data-row="landing_page">Instapage<br /><span class="subtext">Professional Package / Per month, billed annual</span></td>
+			<td class="selectable" data-price="79" data-row="landing_page">Unbounce<br /><span class="subtext">Essential Package / Per month, billed annually</span></td>
+			<td class="selectable" data-price="48" data-row="landing_page">LeadPages<br /><span class="subtext">Pro Package / Per month, billed annually</span></td>
+			<td class="selectable" data-price="54" data-row="landing_page">Lander<br /><span class="subtext"></span>Professional package / Per month, billed annually</td>
+			<td class="hubspot" data-price="0" data-row="landing_page" data-family="hubspot">Hubspot<br /><span class="subtext">included</span></td>
+		</tr>
+
+		<tr class="seo">
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td class="selectable" data-price="69" data-row="seo">Yoast<br /><span class="subtext">Premium Plan / Per month, billed annually</span></td>
+			<td class="selectable" data-price="79" data-row="seo">Moz<br /><span class="subtext">Standard Plan / Per Month, Billed Annually</span></td>
+			<td class="selectable" data-price="83.28" data-row="seo">SEMRush<br /><span class="subtext">Pro Plan / Per Month, Billed Annually</span></td>
+			<td class="hubspot" data-price="0" data-row="seo" data-family="hubspot">Hubspot<br /><span class="subtext">included</span></td>
+		</tr>
+
+		<tr class="analytics">
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td class="selectable" data-price="400" data-row="analytics">Kissmetrics<br /><span class="subtext">Growth Plan / Per month, billed annually</span></td>
+			<td class="selectable" data-price="99" data-row="analytics">ChartMogul<br /><span class="subtext">Essential Plan / Per month, billed annually</span></td>
+			<td class="selectable" data-price="0" data-row="analytics">Google Analytics<br /><span class="subtext">FREE</span></td>
+			<td class="selectable hubspot" data-price="200" data-row="analytics" data-parent="hubspot">Hubspot<br /><span class="subtext">included</span></td>
+		</tr>
+
+		<tr class="website">
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td class="selectable" data-price="24.92" data-row="website">Wordpress<br /><span class="subtext">Small Business, Per Month/Billed Annually</span></td>
+			<td class="selectable" data-price="99" data-row="website">Wix<br /><span class="subtext">Small Business, Per Month/Billed Annually</span></td>
+			<td class="selectable" data-price="99" data-row="website">SquareSpace<br /><span class="subtext">Business Plan, Per Month/Billed Annually</span></td>
+			<td class="selectable hubspot" data-price="300" data-row="website" data-parent="hubspot">Hubspot<br /><span class="subtext">Per Month, Billed Annually</span></td>
+		</tr>
+		
+		<tr id="results">
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td class="hack"></td>
+			<td id="total_price"></td>
+			<td id="hubspot_price">4450.00</td>
+		</tr>
+	</table>
+
+	<script type='text/javascript' src='https://lu2cspjiis-flywheel.netdna-ssl.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+	<script type='text/javascript' src='https://lu2cspjiis-flywheel.netdna-ssl.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+	<script type='text/javascript' src='https://lu2cspjiis-flywheel.netdna-ssl.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+	<script type='text/javascript' src='https://lu2cspjiis-flywheel.netdna-ssl.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+	<script type='text/javascript' src='https://lu2cspjiis-flywheel.netdna-ssl.com/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.11.4'></script>
+</body>
+</html>
