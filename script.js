@@ -1,9 +1,9 @@
 var totalPrice = 0;
 var hubspotPrice = 4450;
 
-// Resets row after a selection is made or changed
-function clearRow(row, selectionOwner) {
-	$("td[data-row='" + row + "']").each(function() {
+// Resets category after a selection is made or changed
+function clearCategory(category, selectionOwner) {
+	$("td[data-category='" + category + "']").each(function() {
 		if ($(this).data("family") !== 'undefined' && selectionOwner == 'undefined') {
 			clearFamily("hatchbuck");
 			clearFamily("infusionsoft");
@@ -24,11 +24,11 @@ function clearFamily(family) {
 function activateFamily(family) {
 	$("td[data-family='" + family + "']").each(function() {
 		if (family == "hatchbuck") {
-			clearRow($(this).data("row"));
+			clearCategory($(this).data("category"));
 			clearFamily("infusionsoft");
 			$(this).addClass("active");
 		} else if (family == "infusionsoft") {
-			clearRow($(this).data("row"));
+			clearCategory($(this).data("category"));
 			clearFamily("hatchbuck");
 			$(this).addClass("active");
 		} 
@@ -66,7 +66,7 @@ $(function() {
 		} else {
 			// determines if the selection is part of a family
 			var owner = $(this).data("family");
-			clearRow($(this).data("row"), owner);
+			clearCategory($(this).data("category"), owner);
 			$(this).toggleClass("active");     
 			activateFamily($(this).data("family"));
 			// activating whole family when child is selected
